@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './styles.css';
 
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Offer from './components/pages/Offer';
+import Hello from './components/pages/Hello';
 
 class App extends React.Component {
     render() {
+        console.log('env url:', process.env.PUBLIC_URL);
         return (
             <>
                 <Header /> 
@@ -18,8 +20,12 @@ class App extends React.Component {
                     <Sidebar />
 
                     <article>
-                        <Router>
-                            <Route path="/offer/:id" component={Offer} />
+                        <Router basename={process.env.PUBLIC_URL}>
+                            <Switch>
+                                <Route exact path="/" component={Hello} />
+                                <Route path="/offer/:id" component={Offer} />
+                                <Route component={() => (<div>404 Not found </div>)} />
+                            </Switch>
                         </Router>
                     </article>
                 </div>

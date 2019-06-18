@@ -33,8 +33,8 @@ class Offer extends React.Component {
 
         scope.forEach(s => {
             columns.push(<td>${numeral(s.fields.basePrice).format('0.00')}</td>);
-            columns.push(<td>${numeral(s.fields.discount).format('0.00')}</td>);
-            columns.push(<td>${numeral(s.fields.basePrice - s.fields.discount).format('0.00')}</td>);
+            columns.push(<td className="red">${numeral(s.fields.discount).format('0.00')}</td>);
+            columns.push(<td><strong>${numeral(Math.max(s.fields.basePrice - s.fields.discount, 0)).format('0.00')}</strong></td>);
         })
 
         return columns;
