@@ -7,6 +7,7 @@ import './styles.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Offer from './components/pages/Offer';
+import Device from './components/pages/Device';
 
 class App extends React.Component {
     render() {
@@ -22,6 +23,7 @@ class App extends React.Component {
                         <Router basename={process.env.PUBLIC_URL}>
                             <Switch>
                                 <Route path="/offer/:id" component={Offer} />
+                                <Route path="/devices/:id" component={Device} />
                                 <Route component={() => (<div>404 Not found </div>)} />
                             </Switch>
                         </Router>
