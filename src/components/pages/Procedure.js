@@ -161,6 +161,10 @@ export default class Procedure extends React.Component {
                             </thead>
                             <tbody>
                                 {steps.map((step, index) => {
+                                    if (!step.hasOwnProperty('details') || step.details === null) {
+                                        step.details = '';
+                                    }
+
                                     return (
                                         <tr key={step.id}>
                                             <td>{index + 1}. {step.name}</td>
