@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Offer from './components/pages/Offer';
 import Device from './components/pages/Device';
+import Procedure from './components/pages/Procedure';
 
 class App extends React.Component {
     render() {
@@ -24,6 +25,7 @@ class App extends React.Component {
                             <Switch>
                                 <Route path="/offer/:id" component={Offer} />
                                 <Route path="/devices/:id" component={Device} />
+                                <Route path="/procedure/:id" component={(props) => (<Procedure timestamp={new Date().toString()} {...props} />)} />
                                 <Route component={() => (<div>404 Not found </div>)} />
                             </Switch>
                         </Router>

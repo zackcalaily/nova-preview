@@ -323,3 +323,35 @@ h5 {
 .red {
   color: red;
 }
+
+table.metadata, table.metadata td {
+    border: none;
+    padding: 2px 5px;
+}
+
+table.metadata td:first-child {
+    font-weight: bold;
+    text-align: right;
+    width: 20%;
+}
+
+ul.toc {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+ul a {
+    color: #12c;
+}
+
+ul.toc li {
+    margin: 8px 0;
+}
+
+.activity {
+    margin: 20px 0 0 20px;
+}
