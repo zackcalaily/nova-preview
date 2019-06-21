@@ -282,7 +282,7 @@ export default class Procedure extends React.Component {
                             <tbody>
                                 <tr>
                                     <td>Categories:</td>
-                                    <td>{this.state.entry.fields.categories.map(category => category.fields.name).join(', ')}</td>
+                                    <td>{this.state.entry.fields.hasOwnProperty('categories') ? this.state.entry.fields.categories.map(category => category.fields.name).join(', ') : 'None'}</td>
                                 </tr>
                                 <tr>
                                     <td>Audience:</td>
@@ -299,7 +299,7 @@ export default class Procedure extends React.Component {
 
                 <hr className="dashed" />
 
-                <h3>Table of Contents</h3>
+                {this.getRenderedFields().length > 0 ? <h3>Table of Contents</h3> : null}
                 <ul className="toc">
                     {this.getRenderedFields().map(field => (
                         <li key={field.id}>
