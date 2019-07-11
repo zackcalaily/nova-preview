@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd0dbfd60bfb7584d07847fc9db86ef5",
+    "revision": "088ae970d03e6260812e50aca03bf46d",
     "url": "/nova-preview/index.html"
   },
   {
-    "revision": "04f2887c8e97136bada3",
+    "revision": "e91b0acc1e2ed2c09053",
     "url": "/nova-preview/static/css/main.4832f868.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nova-preview/static/js/2.fc327e27.chunk.js"
   },
   {
-    "revision": "04f2887c8e97136bada3",
-    "url": "/nova-preview/static/js/main.c2f2178f.chunk.js"
+    "revision": "e91b0acc1e2ed2c09053",
+    "url": "/nova-preview/static/js/main.748fc4b5.chunk.js"
   },
   {
     "revision": "ee444f51cf270bcefcd9",
