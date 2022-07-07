@@ -5,7 +5,7 @@
   "homepage": "http://zackcalaily.github.io/nova-preview",
   "dependencies": {
     "contentful": "^7.7.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "numeral": "^2.0.6",
     "react": "^16.8.6",
     "react-anchor-link-smooth-scroll": "^1.0.12",
